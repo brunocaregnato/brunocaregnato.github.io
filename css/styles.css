@@ -25,9 +25,10 @@ body {
 
 .avatar {
   margin: 1rem;
-  border-radius: 30%;
   margin-bottom: 0.5rem !important;
-  width: 13rem;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
 }
 
 .name {
