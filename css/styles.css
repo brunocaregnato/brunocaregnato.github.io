@@ -17,7 +17,7 @@ body {
 }
 
 .page-header {
-  background-color: black !important;
+  background-color: #048243 !important;
   color: white !important;
   text-align: center !important;
   padding-bottom: 1rem;
@@ -26,9 +26,9 @@ body {
 .avatar {
   margin: 1rem;
   margin-bottom: 0.5rem !important;
-  border-radius: 50%;
-  width: 15rem;
-  height: 15rem;
+  border-radius: 40%;
+  width: 13rem;
+  height: 13rem;
 }
 
 .name {
@@ -42,7 +42,7 @@ body {
 
 .page-about {
   padding: 0rem 0;
-  background-color: white !important;
+  background-color: #32BF84 !important;
   color: black !important;
   text-align: center !important;
 }
@@ -93,7 +93,7 @@ section {
 }
 
 .page-portfolio {
-  background-color: gray !important;
+  background-color: #CAFFFB !important;
   color: black !important;
   text-align: center !important;
   padding-bottom: 1rem;
@@ -112,7 +112,7 @@ section {
 .page-footer {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
-  background-color: black;
+  background-color: #048243;
   color: white;
   display: block;
 }
