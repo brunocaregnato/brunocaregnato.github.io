@@ -2,61 +2,48 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <title>Bruno Caregnato - Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Bruno Caregnato — Desenvolvedor de Software Sênior" />
+        <title>Bruno Caregnato</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="page-header">
-            <div>
-                <img class="avatar" src="assets/images/my_photo.jpg"/>
-                <h1 class="name">BRUNO MIGUEL CAREGNATO</h1>
-                <p class="resume">Software Developer at <a class="link" href="https://zallpy.com/en" target="_blank">Zallpy</a>, currently outsourced to <a class="link" href="https://www.ticketlog.com.br/" target="_blank">Ticket Log</a> (<a class="link" href="https://www.edenred.com/en" target="_blank">Edenred</a> group)</p>
-            </div>
-        </header>
-        <section class="page-section page-about" id="about">
-            <div class="container">
-                <h2 class="page-section-heading text-center">ABOUT ME</h2>
-                <div class="row">
-                    <div class="column text-left">
-                        <p class="lead"> My name is Bruno Miguel Caregnato and I'm 24 years old. I am a Computer Science student at the University of Caxias do Sul (<a class="link" href="https://www.ucs.br/site" target="_blank">UCS</a>) and I have been in the software development area since 2016.</p>
-                    </div>
-                    <div class="column text-right">
-                        <p class="lead"> I like to work with the web area always worrying about the performance of my applications and also with a clean and organized code. Oh, and I also love football, games, anime and manga! :)</p>
-                    </div>
-                    <div class="column-above text-center">
-                        <p class="lead">I live in Caxias do Sul, Brazil.</p>
-                    </div>
-            </div>
-        </section>
-        <section class="page-section page-portfolio" id="portfolio">
-            <div class="container"></div>
-                <h2 class="page-section-heading text-center">EXPERIENCE AND TECH</h2>
-                <div class="row">
-                    <div class="column text-left"></div>
-                    <div class="column text-center">
-                        <p class="lead"> I worked with several languages, but currently I develop personal and company applications using Typescript, Javascript, NodeJS, Java, Spring boot, Angular, .NET and SQL. For more information, look at my resume! :) </p>
-                    </div>
-                    <div class="column text-right"></div>
-                    <div class="column-above text-center">
-                        <a target="_blank" href="assets/resume/bruno-caregnato-resume.pdf" class="button-download">
-                            <i class="fa fa-file-download"></i> DOWNLOAD MY RESUME
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="page-footer text-center">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="page-section-heading text-center">OTHER STUFFS</h2>
-                    <a class="button-media" title="Github" target="_blank" href="https://github.com/brunocaregnato"><i class="fab fa-fw fa-github"></i></a>
-                    <a class="button-media" title="Linkedin" target="_blank" href="https://www.linkedin.com/in/bmcaregnato/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    <a class="button-media" title="Whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5554991320107"><i class="fab fa-fw fa-whatsapp"></i></a>
-                    <a class="button-media" title="Instagram" target="_blank" href="https://www.instagram.com/brunocareg/"><i class="fab fa-fw fa-instagram"></i></a>
-                    <a class="button-media" title="Facebook" target="_blank" href="https://www.facebook.com/bcaregnato/"><i class="fab fa-fw fa-facebook-f"></i></a>                    
-                </div>
-            </div>
-        </footer>
+        <div class="bg-blobs" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+            <button type="button" data-lang="pt">PT</button>
+            <button type="button" data-lang="en">EN</button>
+        </div>
+
+        <main class="profile">
+            <img class="avatar" src="assets/images/my_photo.jpg" alt="Bruno Caregnato" />
+            <h1 class="name">Bruno Caregnato</h1>
+            <p class="role" data-i18n="role">Desenvolvedor de Software Sênior na Fourge, atuando externamente para a Unimed Porto Alegre</p>
+            <p class="meta">
+                <span data-i18n="education">Bacharel em Ciência da Computação</span> — <a class="link" href="https://www.ucs.br/site" target="_blank" rel="noopener">UCS</a> &middot; <span data-i18n="location">Caxias do Sul, Brasil</span>
+            </p>
+
+            <a class="resume-button" href="assets/resume/bruno-caregnato-resume.pdf" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf"></i>
+                <span data-i18n="resume">Currículo (PDF)</span>
+            </a>
+
+            <nav class="socials" data-i18n-aria aria-label="Redes sociais">
+                <a title="GitHub" target="_blank" rel="noopener" href="https://github.com/brunocaregnato"><i class="fab fa-github"></i></a>
+                <a title="LinkedIn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/bmcaregnato/"><i class="fab fa-linkedin-in"></i></a>
+                <a title="WhatsApp" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=5554991320107"><i class="fab fa-whatsapp"></i></a>
+                <a title="Instagram" target="_blank" rel="noopener" href="https://www.instagram.com/brunocareg/"><i class="fab fa-instagram"></i></a>
+            </nav>
+        </main>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
