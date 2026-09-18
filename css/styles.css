@@ -39,6 +39,7 @@
 body {
   margin: 0;
   min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,4 +227,75 @@ body {
 
 .socials a:hover {
   color: var(--text);
+}
+
+@media (max-width: 480px), (max-height: 560px) {
+  body {
+    align-items: flex-start;
+    padding: 4rem 1.25rem 2rem;
+  }
+
+  .lang-toggle {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .avatar {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .meta {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .resume-button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .role, .meta {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-height: 420px) {
+  body {
+    padding: 3rem 1.25rem 1rem;
+  }
+
+  .avatar {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .role {
+    margin-bottom: 0.25rem;
+  }
+
+  .meta {
+    margin-bottom: 1rem;
+  }
+
+  .resume-button {
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1rem;
+  }
 }
