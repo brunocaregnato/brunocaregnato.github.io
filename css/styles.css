@@ -113,37 +113,6 @@ body {
   }
 }
 
-.lang-toggle {
-  position: fixed;
-  top: 1.25rem;
-  right: 1.25rem;
-  z-index: 10;
-  display: flex;
-  gap: 0.25rem;
-  padding: 0.25rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 999px;
-}
-
-.lang-toggle button {
-  font-family: inherit;
-  font-size: 0.75rem;
-  font-weight: 600;
-  border: none;
-  background: transparent;
-  color: var(--muted);
-  padding: 0.35rem 0.6rem;
-  border-radius: 999px;
-  cursor: pointer;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.lang-toggle button.active {
-  background: var(--accent);
-  color: var(--accent-text);
-}
-
 .profile {
   position: relative;
   z-index: 1;
@@ -233,11 +202,6 @@ body {
   body {
     align-items: flex-start;
     padding: 4rem 1.25rem 2rem;
-  }
-
-  .lang-toggle {
-    top: 0.75rem;
-    right: 0.75rem;
   }
 
   .avatar {
