@@ -2,25 +2,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-        <meta name="description" content="Bruno Caregnato — Desenvolvedor de Software Sênior" />
         <script>
-          (function () {
-            function fixViewport() {
-              var viewport = document.querySelector('meta[name="viewport"]');
-              if (viewport) {
-                viewport.setAttribute(
-                  "content",
-                  "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover"
-                );
-              }
-            }
-            fixViewport();
-            window.addEventListener("resize", fixViewport);
-            window.addEventListener("orientationchange", fixViewport);
-            document.addEventListener("DOMContentLoaded", fixViewport);
-          })();
+          document.write(
+            '<meta name="viewport" content="width=' +
+              Math.min(screen.width, window.innerWidth || screen.width) +
+              ', initial-scale=1, maximum-scale=1, viewport-fit=cover">'
+          );
         </script>
+        <noscript>
+          <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        </noscript>
+        <meta name="description" content="Bruno Caregnato — Desenvolvedor de Software Sênior" />
         <title>Bruno Caregnato</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
