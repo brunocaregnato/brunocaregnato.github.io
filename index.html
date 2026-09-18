@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <meta name="description" content="Bruno Caregnato — Senior Software Developer" />
+        <meta name="description" content="Bruno Caregnato — Desenvolvedor de Software Sênior" />
         <title>Bruno Caregnato</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,30 +12,43 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" referrerpolicy="no-referrer" />
     </head>
     <body>
+        <div id="iab-banner" class="iab-banner" hidden>
+            <p id="iab-banner-text"></p>
+            <a id="iab-open-btn" class="iab-open-btn" href="#">Open in browser</a>
+        </div>
+
         <div class="bg-blobs" aria-hidden="true">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
+        <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+            <button type="button" data-lang="pt">PT</button>
+            <button type="button" data-lang="en">EN</button>
+        </div>
+
         <main class="profile">
             <img class="avatar" src="assets/images/my_photo.jpg" alt="Bruno Caregnato" />
             <h1 class="name">Bruno Caregnato</h1>
-            <p class="role">Senior Software Developer at Fourge, working externally for Unimed Porto Alegre</p>
+            <p class="role" data-i18n="role">Desenvolvedor de Software Sênior na Fourge, atuando externamente para a Unimed Porto Alegre</p>
             <p class="meta">
-                <span>B.Sc. in Computer Science</span> — <a class="link" href="https://www.ucs.br/site" target="_blank" rel="noopener">UCS</a> &middot; <span>Caxias do Sul, Brazil</span>
+                <span data-i18n="education">Bacharel em Ciência da Computação</span> — <a class="link" href="https://www.ucs.br/site" target="_blank" rel="noopener">UCS</a> &middot; <span data-i18n="location">Caxias do Sul, Brasil</span>
             </p>
 
             <a class="resume-button" href="assets/resume/bruno-caregnato-resume.pdf" target="_blank" rel="noopener">
                 <i class="fas fa-file-pdf"></i>
-                <span>Resume (PDF)</span>
+                <span data-i18n="resume">Currículo (PDF)</span>
             </a>
 
-            <nav class="socials" aria-label="Social media">
+            <nav class="socials" data-i18n-aria aria-label="Redes sociais">
                 <a title="GitHub" target="_blank" rel="noopener" href="https://github.com/brunocaregnato"><i class="fab fa-github"></i></a>
                 <a title="LinkedIn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/bmcaregnato/"><i class="fab fa-linkedin-in"></i></a>
                 <a title="Instagram" target="_blank" rel="noopener" href="https://www.instagram.com/brunocareg/"><i class="fab fa-instagram"></i></a>
             </nav>
         </main>
+
+        <script src="js/main.js"></script>
+        <script src="js/inapp-browser.js"></script>
     </body>
 </html>

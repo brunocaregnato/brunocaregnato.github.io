@@ -182,9 +182,73 @@ body {
   opacity: 0.85;
 }
 
+.lang-toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 10;
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+
+.lang-toggle button {
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.lang-toggle button.active {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
 .socials {
   display: flex;
   gap: 1.25rem;
+}
+
+.iab-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.iab-banner[hidden] {
+  display: none;
+}
+
+.iab-banner p {
+  margin: 0;
+}
+
+.iab-open-btn {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  white-space: nowrap;
 }
 
 .socials a {
@@ -202,6 +266,11 @@ body {
   body {
     align-items: flex-start;
     padding: 4rem 1.25rem 2rem;
+  }
+
+  .lang-toggle {
+    top: 0.75rem;
+    right: 0.75rem;
   }
 
   .avatar {
