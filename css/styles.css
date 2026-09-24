@@ -8,9 +8,9 @@
   --accent: #2563eb;
   --accent-text: #ffffff;
   --border: #e5e7eb;
-  --blob-1: #93c5fd;
-  --blob-2: #a5b4fc;
-  --blob-3: #bfdbfe;
+  --blob-1: #86efac;
+  --blob-2: #6ee7b7;
+  --blob-3: #bbf7d0;
   --blob-opacity: 0.45;
 }
 
@@ -23,9 +23,9 @@
     --accent: #3b82f6;
     --accent-text: #0f1115;
     --border: #262a33;
-    --blob-1: #1d4ed8;
-    --blob-2: #4338ca;
-    --blob-3: #0e7490;
+    --blob-1: #15803d;
+    --blob-2: #047857;
+    --blob-3: #0f766e;
     --blob-opacity: 0.35;
   }
 }
